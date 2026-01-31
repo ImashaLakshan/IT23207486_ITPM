@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 const testCases = [
   {
     id: "Neg_UI_0001",
-    name: "Long UI lag",
+    name: "Clear/reset functionality not working properly",
     input: "mama gedhara yanavaa",
     expected: "මම ගෙදර යනවා",
   },

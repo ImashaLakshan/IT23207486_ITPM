@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 const testCases = [
   {
     id: "Pos_UI_0001",
-    name: "Real-time conversion",
+    name: "Real-time output updates while typing",
     input: "mama pansalata enavaa",
     expected: "මම පන්සලට එනවා",
   },
