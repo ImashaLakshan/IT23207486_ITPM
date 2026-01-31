@@ -8,8 +8,11 @@ const { defineConfig, devices } = require("@playwright/test");
 module.exports = defineConfig({
   testDir: "./tests",
   fullyParallel: true,
+  // @ts-ignore
   forbidOnly: !!process.env.CI,
+  // @ts-ignore
   retries: process.env.CI ? 2 : 0,
+  // @ts-ignore
   workers: process.env.CI ? 1 : undefined,
   reporter: [["list", { printSteps: true, colors: true }], ["html"]],
   use: {
